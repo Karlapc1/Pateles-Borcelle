@@ -65,8 +65,10 @@ function mostrarPasteles(pasteles, containerSelector) {
 function getStarsHTML(popularidad) {
     const fullStars = Math.floor(popularidad);
     const halfStar = popularidad % 1 !== 0;
-    const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
-
+    console.log(`estrella completa: ${fullStars}`);
+    console.log(`media estrella: ${halfStar}`);
+    const emptyStars = (5 - fullStars - (halfStar ? 1 : 0)) >= 0? (5 - fullStars - (halfStar ? 1 : 0)) : 0 ;
+    
     return (
         '<i class="fas fa-star"></i>'.repeat(fullStars) +
         (halfStar ? '<i class="fas fa-star-half-alt"></i>' : '') +
