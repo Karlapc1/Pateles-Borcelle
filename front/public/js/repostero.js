@@ -1,4 +1,4 @@
-
+6+z
 // Selecciona el contenedor para los reposteros populares
 const reposterosContainer = document.querySelector('.reposteros-container');
 
@@ -26,7 +26,7 @@ const renderReposteros = (reposteros) => {
 };
 
 // URL de la API que devuelve los datos de los reposteros
-const API_URL = 'http://localhost:3000/api/repostero/obtenereposteros'; // Cambia esta URL por la correcta de tu backend
+const API_URL = 'https://pateles-borcelle.onrender.com/api/repostero/obtenereposteros'; // Cambia esta URL por la correcta de tu backend
 
 // Función para obtener los datos de los reposteros desde la API
 const fetchData = async () => {
