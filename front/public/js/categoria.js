@@ -79,7 +79,7 @@ function getStarsHTML(popularidad) {
 // Funciones existentes para mostrar pasteles
 async function mostrarDestacados() {
     try {
-        const response = await fetch('http://localhost:3000/api/pastel/obtenerpasteles');
+        const response = await fetch('https://pateles-borcelle.onrender.com/api/pastel/obtenerpasteles');
         const pasteles = await response.json();
         
         const destacados = pasteles.filter(pastel => pastel.popularidad >= 4.2);
@@ -91,7 +91,7 @@ async function mostrarDestacados() {
 
 async function mostrarNovedades() {
     try {
-        const response = await fetch('http://localhost:3000/api/pastel/obtenerpasteles');
+        const response = await fetch('https://pateles-borcelle.onrender.com/api/pastel/obtenerpasteles');
         const pasteles = await response.json();
         
         const novedades = pasteles.filter(pastel => pastel.popularidad <= 4.0);
@@ -103,7 +103,7 @@ async function mostrarNovedades() {
 
 async function mostrarRecomendados() {
     try {
-        const response = await fetch('http://localhost:3000/api/pastel/obtenerpasteles');
+        const response = await fetch('https://pateles-borcelle.onrender.com/api/pastel/obtenerpasteles');
         const pasteles = await response.json();
         
         const recomendados = pasteles.sort((a, b) => b.popularidad - a.popularidad);

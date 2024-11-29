@@ -1,4 +1,3 @@
-
 // Selecciona el contenedor para los reposteros populares
 const reposterosContainer = document.querySelector('.reposteros-container');
 
@@ -26,7 +25,7 @@ const renderReposteros = (reposteros) => {
 };
 
 // URL de la API que devuelve los datos de los reposteros
-const API_URL = 'http://localhost:3000/api/repostero/obtenereposteros'; // Cambia esta URL por la correcta de tu backend
+const API_URL = 'https://pateles-borcelle.onrender.com/api/repostero/obtenereposteros'; // Cambia esta URL por la correcta de tu backend
 
 // Función para obtener los datos de los reposteros desde la API
 const fetchData = async () => {
@@ -49,7 +48,7 @@ const fetchData = async () => {
 // Obtener y mostrar pasteles destacados
 async function mostrarDestacados() {
     try {
-        const response = await fetch('http://localhost:3000/api/pastel/obtenerpasteles');
+        const response = await fetch('https://pateles-borcelle.onrender.com/api/pastel/obtenerpasteles');
         const pasteles = await response.json();
 
         // Filtrar pasteles destacados
