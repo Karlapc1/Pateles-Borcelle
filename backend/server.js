@@ -22,7 +22,7 @@ const port = process.env.PORT || 3000;
 // Middleware
 // Configura CORS para permitir solicitudes desde el frontend
 app.use(cors({
-  origin: 'http://Karlapc1.github.io', // Cambia este valor al puerto de tu frontend
+  origin: 'https://pateles-borcelle-1.onrender.com', // Cambia este valor al puerto de tu frontend
   credentials: true // Permite enviar cookies si es necesario
 }));
 
