@@ -12,7 +12,7 @@ document.getElementById("loginForm")?.addEventListener("submit", async (event) =
     console.log("Contraseña:", contrasena); // Verifica que la contraseña sea la esperada
   
     try {
-      const response = await fetch("http://localhost:3000/api/usuario/loginuser", {
+      const response = await fetch("https://pateles-borcelle.onrender.com/api/usuario/loginuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
