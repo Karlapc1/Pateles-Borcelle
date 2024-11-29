@@ -1,4 +1,3 @@
-6+z
 // Selecciona el contenedor para los reposteros populares
 const reposterosContainer = document.querySelector('.reposteros-container');
 
