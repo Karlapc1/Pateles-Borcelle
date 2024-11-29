@@ -49,7 +49,7 @@ const fetchData = async () => {
 // Obtener y mostrar pasteles destacados
 async function mostrarDestacados() {
     try {
-        const response = await fetch('http://localhost:3000/api/pastel/obtenerpasteles');
+        const response = await fetch('https://pateles-borcelle.onrender.com/api/pastel/obtenerpasteles');
         const pasteles = await response.json();
 
         // Filtrar pasteles destacados
